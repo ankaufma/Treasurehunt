@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Treasurehunt</string>
+
+<!-- COUCHBASE SETTINGS -->
+    <string name="serverUrl">http://192.168.2.27</string>
+    <string name="database">guide</string>
+    <string name="thisSite">Site-66b21e53-6eac-4e1e-9d58-efbdf7e7d926</string>
+
+    <string name="yourPlaying">You are Playing on Playground</string>
+    <string name="enterName">Enter Name</string>
+    <string name="chooseGame">Choose a Game</string>
+    <string name="emptyString"> </string>
+    <string name="startGame">Start Game</string>
+    <string name="imageView">Image View</string>
+    <string name="playerStats">Player Statistics</string>
+    <string name="showMap">Show Map for Site</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="action_settings">Settings</string>
+</resources>

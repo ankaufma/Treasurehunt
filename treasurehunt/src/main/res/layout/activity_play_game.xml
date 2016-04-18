@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1">
+
+    <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:rowCount="1"
+            android:id="@+id/gridView"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/scrollView" android:layout_gravity="center">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/emptyString"
+                android:id="@+id/hintQuestion" android:gravity="center"/>
+    </ScrollView>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" android:layout_gravity="center_horizontal" android:layout_weight="0.26">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/imageView"
+                android:id="@+id/imageView" android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gridLayout1" android:layout_gravity="center_horizontal"
+            android:columnCount="2" android:rowCount="4">
+
+        <Button
+                android:id="@+id/aw1"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:onClick="checkIfTrue"/>
+        <Button
+                android:id="@+id/aw2"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:onClick="checkIfTrue"/>
+        <Button
+                android:id="@+id/aw3"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:onClick="checkIfTrue"/>
+        <Button
+                android:id="@+id/aw4"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:onClick="checkIfTrue"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:text="@string/emptyString"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_columnSpan="2"
+                android:id="@+id/clock" android:layout_row="3" android:layout_column="0" android:gravity="center"/>
+    </GridLayout>
+</LinearLayout>
